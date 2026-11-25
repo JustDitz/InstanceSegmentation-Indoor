@@ -45,23 +45,6 @@ Angka lengkap dan asalnya tersedia di [`results/analisis_inisialisasi/final_tabl
 
 Lima foto pada analisis kegagalan **sengaja dipilih sebagai kasus kegagalan**, bukan sampel acak atau gambaran keseluruhan dataset. Diagnostik menggunakan confidence 0,14 dan pencocokan mask sekelas dengan IoU ≥ 0,50; pengaturan ini berbeda dari evaluasi AP dataset.
 
-## Isi repositori
-
-```text
-.
-├── viskom-train.ipynb                 # Persiapan data, training, dan evaluasi
-├── viskom-final-no-retraining.ipynb   # Analisis hasil tersimpan dan kasus kegagalan
-├── inference.ipynb                    # Demo inferensi pada satu foto
-├── Dataset_Roboflow/                  # Ekspor dataset COCO dan split bawaan
-├── Model/                             # Checkpoint enam konfigurasi
-├── test/                              # Foto personal dan anotasi COCO
-├── metadata_fixed.csv                 # Metadata kondisi foto personal
-├── results/                           # Metrik, log, grafik, dan visualisasi
-└── paper/                             # Laporan PDF dan sumber LaTeX
-```
-
-Notebook training semula dikonfigurasi untuk direktori **Kaggle**. Path dataset, checkpoint, dan output perlu disesuaikan jika dijalankan di lingkungan lain. Beberapa berkas model berukuran besar; pastikan berkas dan bobot yang diperlukan tersedia setelah clone.
-
 ## Menjalankan notebook
 
 ### 1. Siapkan lingkungan
